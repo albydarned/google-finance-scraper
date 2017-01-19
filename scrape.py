@@ -1,4 +1,4 @@
-import urllib
+import urllib2
 import csv
 import os
 import shutil
@@ -96,11 +96,9 @@ while i < len(industries):
             f_input.next() # skip header line
             for line in f_input:
                 f_output.write(line)
-            
+
     i = i + 1
 
 print "Script success!"
 print "Run \'copy temp\\rem\\*.csv merged.csv\' from this directory to merge all the files into one."
-print "Headers and additional formatting may be necessary." 
-
-
+print "Headers and additional formatting may be necessary."
